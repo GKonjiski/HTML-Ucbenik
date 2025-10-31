@@ -1,0 +1,157 @@
+<!DOCTYPE html>  <!--TO JE DEKLERACIJA, da je to HTML DOKUMENT-->
+<html>
+    <head>
+        <title>
+            moja spltna stran
+
+        </title>
+
+        <!--da dodaš ikono-->
+        <link rel="icon" type="image/jpg" href="slike/ikona.jpg"> <!--specifaja raletionsip med tem dokumetom in zunanjim fajlom-->
+
+        <body> <!--tle not so vidni deli spletne strani-->
+
+            <h1> <!-- to je kr velik naslov, H so naslovi in se s številko poleg manjšajo-->
+            TO JE H1 
+            </h1>
+
+            <h2>
+            TO JE H2
+            </h2>
+            <br> <!-- line brak se sam zapre, ga daš lahko med tekst v paragrafu za novo vrstico-->
+            <hr> <!--da horizontalno črto zraven-->
+            <p> <!--to je paragraf, med dvema paragrafoma je line break-->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> <br>A sapiente rerum necessitatibus velit mollitia accusantium eligendi. Doloremque asperiores quidem mollitia officiis rem provident corporis excepturi quaerat! Ad dignissimos perferendis veritatis.
+            </p>
+
+            <pre> <!--isto kt p sam da se ohranjo odstavki pa večji presledki, ker pr p se ne-->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque officia eius est fuga velit adipisci odit, 
+            alias numquam quam quod maiores dolorum voluptatibus, obcaecati tempora nisi tempore itaque aliquam amet.
+            </pre>
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+            target="blank"
+            title="zaston v-buks"> <!--a je da dodaš tekst z linkom, href je link (lahko daš pa tut ime relative patha do druzga html fajla), 
+                                       target pa kako hočeš da se odpre, blank je da se odpre v novem tabu
+                                        title pa kaj hočeš da se napiše ko hoverš čez z miško-->
+                Zastojn v-bucks
+            </a>
+            <br>
+            <br>
+            <!--da pošle mail-->
+            <a href="mailto:poskus@nedela.si"> 
+                pošlji mi email
+            </a>
+
+            <br>
+            <br>
+
+
+            <!--slika z linkom-->
+            <a href="https://www.fortnite.com/item-shop/v-bucks?lang=en-US">
+            <img src="slike/v-bucks.jpg" alt="TO LOHK DOBIŠ"  
+            height="200" >  <!-- SLIKA, če rabš še width, 
+                            sam drugače se pa spremeni avtomatično,
+                            alt je če se slika ne pokaže-->
+            
+            </a>
+            <br>
+            <br>
+            <!--dela tut z gifi-->
+            <img src="slike/v-buks.gif" alt="asd">
+
+
+            <!--AUDIO-->
+            <!--autoplay je zraven controls da se avtomatsko glasba začne predvajat, lohko dodaš še mute, loop da loopa-->
+            <br>
+            <br>
+
+            <audio  controls autoplay loop>
+            <source src="zvok/star_wars.mp3" type="audio/mpeg">
+            <!--tle lohk dodaš še alternativni source če se prvi ne začne predavajat-->
+            </audio>
+            
+            <!--da ne rabš kotrolov ampak se glasba začne avtomatsko predvajat-->
+            <audio   autoplay loop>
+            <source src="zvok/star_wars.mp3" type="audio/mpeg">
+            <!--tle lohk dodaš še alternativni source če se prvi ne začne predavajat-->
+            </audio>
+            <br>
+            <br>
+
+            <!-- VIDEO--> 
+             <!--z a dodaš not link tko kt pr sliki, target="_blank da odpre nou tab"-->
+             <video src="vide/movie_254772.mp4" width="500px" controls autoplay loop muted>
+            <!--tle dodaš alternativni format kot source isto kt pr audio-->
+             </video>
+
+             <!-- oblikovanje teksta-->
+              <p>Normalen tekst</p>
+              <p><b>bold</b> tekst</p>
+              <p><i>italic</i> tekst</p>
+              <p><u>podčrtan</u> tekst</p>
+              <p><del>črtan</del> tekst</p>
+              <p><big>velik</big> tekst</p>
+              <p><small>majhen</small> tekst</p>
+              <p><sub>podpis</sub> tekst</p>
+              <p><sup>nadpis</sup> tekst</p>
+              <p><tt>monospaced</tt> tekst</p>
+              <p><mark style="background-color:rgb(70, 54, 131)">highligtan</mark> tekst</p>
+
+
+            <!--SPAN IN DIV-->
+
+              <h1><span style="background-color: aqua;">To je span naslov</span></h1> <!--z span lohk stiliziraš celo vrstico z css-->
+
+              <h1><div style="background-color: rgb(179, 50, 140);">To je div naslov</div></h1> <!--ta da pa izbrani tekst v svoj okvirček k se ga potlej stilizira ceuga za razliko od line kjer se sam izbrana vrstica-->
+            
+            <!--SEZNAMI (list)-->
+
+            
+            <!--neurejen seznam-->
+            <h4>NEUREJEN SEZNAM</h4>
+            <ul>
+                <li>mleko</li>
+                <li>kava</li>
+                <li>kruh</li>
+                <li>za peko</li>
+                <ul>
+                    <li>moka</li>
+                    <li>olje</li>
+                    <li>sladkor</li>
+                </ul>
+            </ul>
+
+            <br>
+            <h4>UREJEN SEZNAM številke</h4>
+            <ol>
+               <li>jej zajterk</li>
+               <li>pejd na faks</li>
+               <li>ped delat</li> 
+            </ol>
+
+            <br>
+
+            <h4>OPISNI SEZNAM</h4>
+            <dl>
+                <dt>zmaj</dt>
+                <dd>velik kuščar</dd>
+                <dt>mačka</dt>
+                <dd>pritalna žival z dlako</dd>
+            </dl>
+
+
+
+        
+            
+        </body>
+
+
+
+
+
+    </head>
+
+
+</html> <!-- \je konec, vedno v paru-->
