@@ -1,1 +1,1 @@
-OSNOVE HTML, večinoma ma vse svoj opis z komentarjem
+OSNOVE HTML, večinoma ima vse svoj opis z komentarjem.
