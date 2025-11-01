@@ -146,6 +146,66 @@
                 <dd>pritalna žival z dlako</dd>
             </dl>
 
+									<!--TABELA-->
+        <!--dodej še da !+tab nardi metapodatke sam takoj--> 
+        <h3>Odpiralni Cas</h3>
+        <table border="2" style="background-color:black">  <!--s tem nardis tabelo, y border narediš okvir, večja ko je št. večji je okvir-->
+          <tr align="center" style="background-color:blue">  <!--to pomeni tabel row (vrstica v tabeli)-->
+            <th width="100">Nedelja</th>  <!-- to je table header, zraven naštimaš mere-->
+            <th width="100">Ponedeljek</th>
+            <th width="100">Torek</th>
+            <th width="100">Sreda</th>
+            <th width="100">Cetrtek</th>
+            <th width="100">Petek</th>
+            <th width="100">Sobota</th>
+          </tr>
+          <tr align="center" style="background-color:aliceblue"> <!--align nastimas postavitev, lahko da[ rigt,left...-->
+            <td>Zaprta</td>     <!--to pomeni tabel data, torej podatki v tabeli-->
+            <td>212312</td>
+            <td>123123</td>
+            <td>123124</td>
+            <td>242124</td>
+            <td>124124</td>
+            <td>124124</td>
+            
+          </tr>
+        </table>
+        <!--če rabš še veš vrstica dodaš še tr pa pol not td-->
+        <br>
+        <br>
+          
+        <!--KNOF-->
+        <!--knof k te odpele do spetne strani-->
+        <a href="https://google.com">
+          <button style = "font-size:25px; background-color:gray; color: lightblue; border-radius:25px;">
+          GOOOGLE
+          </button>
+        </a>
+          
+        <a href="podstrani/stran2.html">
+          <button style = "font-size:25px; background-color:gray; color: lightblue; border-radius:25px">
+          Podstran 2
+          </button>
+        </a>
+          
+        <!--javabutton-->
+        <button onclick="narediNekaj()" style = "font-size:25px; background-color:gray; color: lightblue; border-radius:25px">
+          Java knof
+        </button>
+        <p id="pozdrav">HELLO</p>
+        <script>
+          function narediNekaj(){
+            document.getElementById("pozdrav").innerHTML="Adijo";
+          }
+        </script>
+        
+        <!--FORM-->
+        <form action="index.php" method="POST"> <!--action-kam hočš poslat podatke, -->
+          <label for="username">uporabnisko ime</label> <!--for se uporabla, če ma kdo screen readerja, pa da lohk kasnej id uporablaš-->
+          <input type="text" id="username" required> <!-- required da morš nujno neki not napisat če hočeš submit stisnt-->
+          <input type="submit">
+        </form>
+
 
 
         
