@@ -1,0 +1,52 @@
+
+
+body{
+  background-color: gray;
+}
+
+h1{
+  color: green;
+}
+
+
+/*to je da določiš preko id target*/
+#drugi{   
+  color: magenta;
+}
+
+/*to je da določiš preko class target*/
+.paragraf{
+  color: yellow;
+}
+/*FONT*/
+/*ful so op google font sam sm na tablci pa ne dela, poglej brocode video čas 1.38.00*/
+#p1{
+  color: tomato;
+  font-family:"verdana", "Times New Roman";
+  font-size: 1em; /*1em je standardna velikost v procentih, lahko se uporabi tut px kjer je 16 standard*/
+  font-weight: bold;
+  font-style: italic;
+}
+
+#p2{
+  color: rgb(102,222,255);  
+}
+
+#p3{
+  color: #59ff5f
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

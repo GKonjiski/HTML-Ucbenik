@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="slo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS</title>
+  
+  <!--Torej stzle lohk spreminjaš z inline, internal al pa external css, najboljši je external-->
+  <!--Internal CSS, tle not napišeš del k bi ga rad oblikoval v {}, targeta pa čis vse z isto deklaracijo-->
+  <style> 
+    body {
+      background-color: black;
+    }
+   
+    
+    p {color: red;
+      
+    }
+    
+  </style>
+  <!--eksternal css morš povezat html z css datoteko, k ma style sheet, drugače je pa struktura enaka kot pri internal, lahko pa delaš tudi po id ali po class-->
+  <link rel="stylesheet" href="stil.css"> <!--  rel je relationship med html in css fajlom-->
+</head>
+
+
+  <body>
+    
+    <a href="index.html">NAZAJ NA GLAVNOSTRAN</a>
+    
+    <!--Inline CSS (da style napišeš v vrstico), internal CSS (da v head napišeš style) -->
+      
+    <h1>Spletna stran</h1>
+    
+    <p style="color:purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellat corporis molestiae impedit accusantium, tenetur rem minima numquam, maxime ad ab? Aliquam doloribus cum, quas maxime beatae nesciunt optio mollitia.</p>
+    
+    <p id="drugi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellat corporis molestiae impedit accusantium, tenetur rem minima numquam, maxime ad ab? Aliquam doloribus cum, quas maxime beatae nesciunt optio mollitia.</p>
+    
+    <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellat corporis molestiae impedit accusantium, tenetur rem minima numquam, maxime ad ab? Aliquam doloribus cum, quas maxime beatae nesciunt optio mollitia.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellat corporis molestiae impedit accusantium, tenetur rem minima numquam, maxime ad ab? Aliquam doloribus cum, quas maxime beatae nesciunt optio mollitia.</p>
+    
+    <!--Barve-->
+    
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla voluptatibus facere, distinctio expedita eos mollitia similique ex aliquid temporibus adipisci voluptate tempora possimus repellat, assumenda et nesciunt sint ab.</p>
+    
+    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla voluptatibus facere, distinctio expedita eos mollitia similique ex aliquid temporibus adipisci voluptate tempora possimus repellat, assumenda et nesciunt sint ab.</p>
+    
+    <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla voluptatibus facere, distinctio expedita eos mollitia similique ex aliquid temporibus adipisci voluptate tempora possimus repellat, assumenda et nesciunt sint ab.</p>
+    
+    <p id="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla voluptatibus facere, distinctio expedita eos mollitia similique ex aliquid temporibus adipisci voluptate tempora possimus repellat, assumenda et nesciunt sint ab.</p>
+    
+  </body>
+</html>
