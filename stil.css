@@ -2,22 +2,35 @@
 
 body{
   background-color: gray;
+  border: 3px solid;
+  display:flow-root
 }
 
-h1{
+
+/*BORDER*/
+/*border stili: solid, dashed. dotted, double, groove, ridge, inset, outset, none*/
+/*lahko namest na dougo napiošeš sam border: debeline, stil, barva (BREZ VEJIC UMES!!!). ostalo mora bit pa posebej*/
+h1{ 
   color: green;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #741b27;
+  border-radius: 7px;
 }
 
 
 /*to je da določiš preko id target*/
 #drugi{   
   color: magenta;
+  border-bottom: 3px dotted yellowgreen;
 }
 
 /*to je da določiš preko class target*/
 .paragraf{
   color: yellow;
 }
+
+
 /*FONT*/
 /*ful so op google font sam sm na tablci pa ne dela, poglej brocode video čas 1.38.00*/
 #p1{
@@ -28,16 +41,75 @@ h1{
   font-style: italic;
 }
 
+/*SENCA*/
+
 #p2{
   color: rgb(102,222,255);  
+  text-shadow: 2px 5px 5px; /*perve dva sta za offset tretji je pa za blur, lahko dodaš še barvo in če ločiš z , lahkozraven dodaš še eno senco*/
+  font-size: 3em;
 }
 
+
+/*MARGIN-to je območje med elementom in naslednim elementom*/
 #p3{
   color: #59ff5f
 }
 
+#škatla{
+    width: 200px;
+    height: 200px;
+    background-color: #0437F2;
+    box-shadow: 10px 10px 5px;
+}
 
 
+
+.škatla{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+/*MARGIN-to je območje med elementom in naslednim elementom, (margin-da v vse smeri)*/
+
+#škatla2{
+    background-color: aquamarine;
+    margin-top: 50px;
+
+}
+
+#škatla3{
+    background-color: #a10c63;
+    margin-left: auto; /*auto-da so stvari na sred*/
+}
+
+/*float= dovoljuje elemenom da so okoli (zraven) enega emelenta*/
+/*Tm k je določen okvir morš dodat še display:flow-root, da float stvari ne owerfoatajo*/
+
+#slika1{
+    float:left;
+    margin: 10px;  
+}
+#slika2{
+    float:right;
+
+
+}
+
+.p5{
+    font-size: 1em;
+    margin: 25px;
+}
+
+
+/*overfolow= kaj se zgodi ko nekaj znotrej elemnta overflowa. Verzije-visable, hiden, clip (overflow-clip-margin: kok je margin kok se čes vid)
+scroll, auto ()da scroll bar če ga potrebuješ*/
+
+#škatla4{
+    border: 2px solid;
+    height: 15px;
+    overflow: auto;
+}
 
 
 
