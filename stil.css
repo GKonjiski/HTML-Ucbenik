@@ -157,7 +157,7 @@ scroll, auto ()da scroll bar če ga potrebuješ*/
     height: 100vh; /*To je da 100% zapolne spletno stran view port*/
 }
 
-/*POZICIJA
+/*POZICIJA / LOKACIJA
     relative= kjer je ponavadi
     fixed= se premika glede na viewport
     absolute= kje se nahaja glede na prednika, pač tist v kerem se nahaja div p /p /div, v tem primiru p je v div
