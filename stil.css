@@ -1,7 +1,16 @@
+/*To sesšteje piksle od 'paddinga in borderja,in je vse skp tok width kokr določš, brez tega bi se padding pa border dodatno štel ponavad se da to avtomatsko na začetek*/
+*{
+    box-sizing: border-box;
+}
 
 
+/*BACKGROUND IMAG*/
 body{
-  background-color: gray;
+  background-image: url(slike/ikona.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /*a se premika s scrolanjem al ne*/
+  background-size: cover; /*da zavzame celo stran*/
   border: 3px solid;
   display:flow-root
 }
@@ -112,7 +121,87 @@ scroll, auto ()da scroll bar če ga potrebuješ*/
 }
 
 
+/*DISPLY*/
+/*deli se na block level elemnte (tisti k zasedejo od leve do desne strani (div)) in inline (zasedeje sam tist k reabjo (span))*/
+/*bsiclly span inline, div block*/
+#div{
+    background-color: #a10c63;
+    width: 100px;
+    height: 100px;
+    /*divu lohk določeš height pa width span pa ne*/
 
+}
+
+#span{
+    background-color: #0437F2;
+    /*divu lohk določeš height pa width span pa ne dokler ne spremeniš dispaya*/
+    width: 100px;
+    height: 100px;
+    display: inline-block; /*to je da je tekst še vedno lohk zraven čeprov je block*/
+}
+
+/*HEIGHT*/
+
+.višina{
+    border: 2px solid;
+    padding: 25px;
+    width: 50%;
+    box-sizing: border-box; /*To sesšteje piksle od 'paddinga in borderja,in je vse skp tok width kokr določš, brez tega bi se padding pa border dodatno štel ponavad se da to avtomatsko na začetek*/
+    float: left;
+    min-height: 50%;
+    /*je neka fora s temi višanami in procenti kok lohk viewporta zavzemejo poglej če rabš bro code 2:13 za*/ 
+}
+
+.kontejner{
+    background-color: aquamarine;
+    height: 100vh; /*To je da 100% zapolne spletno stran view port*/
+}
+
+/*POZICIJA
+    relative= kjer je ponavadi
+    fixed= se premika glede na viewport
+    absolute= kje se nahaja glede na prednika, pač tist v kerem se nahaja div p /p /div, v tem primiru p je v div
+    sticky=da ostane na istem mestu nw glede a scrollaš al ne (uporabno!!!) npr. če je neki sticky na opx bo se kazal na vrhu tut če si scrollov niži
+    static =default*/
+
+#poz1{
+    width: 200px;
+    height: 200px;
+    background-color: #59ff5f;
+    position: relative;
+    top: 100px; /*ga potisneš za 100px od kjer je ponavadi ker je relative position*/
+    left: 100px
+}   
+
+#poz2{
+    width: 200px;
+    height: 200px;
+    background-color: #351a66;
+    position: fixed; /*kje hočeš da se direkt nahaja na spletni strani, podobno kokr pr pygamu*/
+    right: 0px;
+    bottom: 0px;
+}
+
+/*Kombinatorji*/
+#kombinator p{
+    background-color: bisque;
+    /*desendant samo presledek da targetaš*/
+}
+
+#kombibator >p{
+    background-color: #59ff5f;
+    /*to je child (označi se z >)torej samo tisti k so direkt v elemntu brez unih k so en elemnt nižje v še kakšnem drugem elementu ki je desendant tega elementa (kontejnerja*/
+}
+
+#kombibator ~p{
+    background-color: #59ff5f;
+    /*to je general sibling (označi se z ~), torej sibling k ni zntrej elemta, v tem primeru vsi p k niso v id kombinatorju ne vela pa za p k so v sibmingu od kombinatorja*/
+}
+
+#kombibator +p{
+    background-color: #59ff5f;
+    /*to je adjesent sibling (označi se z + ), torej sibling k se dotika elemnta v kerem so ostali p */
+}
 
 
 
