@@ -9,14 +9,47 @@
 
         <!--da dodaš ikono-->
         <link rel="icon" type="image/jpg" href="slike/ikona.jpg"> <!--specifaja raletionsip med tem dokumetom in zunanjim fajlom-->
-			</head>
+		<link rel="stylesheet" href="stil.css">
+    </head>
         <body> <!--tle not so vidni deli spletne strani-->
+
+            <!--LAYOUT:
+                heather
+                nav
+                main
+                section = odvisna vsebina
+                aside = kontent ob strani
+                aticle = neodvisna vsebina
+                footer-->
 
             <header style="background-color: green;"> <!--Tle not je uvod v stran -->
                 <h1>Dobrodošli na spletnos tstran</h1>
+                
+                <!--NAVIGATION BAR-->
+                <nav class="navbar">
+                    <ul>
+                      <li><a href="">HOME</a></li>
+                      <li><a href="">O NAS</a></li>  
+                      <li><a href="">KONTAKT</a></li>  
+                      <li><a href="">PRODUKTI</a></li>    
+                    </ul>
+                </nav>
+
+
+
                 <a href="">DOM</a>
                 <a href="">O nas</a>
                 <a href="">BUBUBABA</a>
+
+                <!--dropdown meni-->
+                <div class="dropdown">
+                    <button>HRANA</button>
+                    <div class="hrana">
+                        <a href="">Jabolko</a>
+                        <a href="">Pomaranča</a>
+                        <a href="">Banana</a>
+                    </div>
+        </div>
                 <hr> <!--nardi črto-->
 
 
@@ -256,10 +289,18 @@
             <input type="submit">
             <input type="reset">
             </form>
+            
 
         </main>
 
         <footer style="background-color: bisque;"> <!--hrani zakluček spletne strani-->
+            <!--PAGINATION-št. strani-->
+            <div class="pagination">
+                <a href=""><</a>
+                <a calss="active" href="index.html">1</a>
+                <a calss="" href="CSS.html">2</a>
+                <a href="">></a>
+            </div>
             <hr>
             avtor: Kojima
             &copy; copyrigt reserved <br>

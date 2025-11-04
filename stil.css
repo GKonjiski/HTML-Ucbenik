@@ -203,11 +203,252 @@ scroll, auto ()da scroll bar če ga potrebuješ*/
     /*to je adjesent sibling (označi se z + ), torej sibling k se dotika elemnta v kerem so ostali p */
 }
 
+/*PSEUDO-CLASES-FUUUL POMEMBEN
+uporabljaš, da se elemnt spremeni ko se nekaj dogaja z njim, howeraš z miško, klikneš....*/
+
+a:link{
+    color: #59ff5f;
+}
+
+a:hover{
+    color: #741b27;
+}
+
+a:active{
+    color: aqua;
+}
+
+a:visited{
+    color: #59ff5f;
+}
+
+li:hover{
+    background-color: yellow;
+}
+
+li:not(:hover){
+    background-color: #36a862;
+}
+
+li:nth-child(4){
+    background-color: #741b27;
+}
+/*da se elemnt pokaže ko hooveraš čez enga druzga*/
+#pozdrav p{
+    background-color: #0437F2;
+    display:none
+}
+#pozdrav:hover p{
+    display:block
+}
+
+/*PSEUDO ELEMNET
+se uporabla za tylanje določenega dela elmenta označ se z ::*/
+
+#pseudo::first-letter{
+    font-size: 2em;    
+}
+
+#pseudop::first-line{
+    background-color: yellow;
+}
+
+p::selection{
+    background-color: black;
+    color: green;  
+}
+#sadje li::before{
+    content:"super "
+}
+
+#jabolko::after{
+    content:"jabolko"
+}
+
+/*PAGINATION-št. strani*/
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    text-decoration: none;
+    font-size: 1.5em;
+    display: inline-block;
+}
+.pagination a.active{
+    color: #36a862;
+}
+
+/*DROPDOWN meni*/
+.dropdown{
+    display:inline-block   /*da se aktivira k se hoovera sam če z njega*/
+}
+.drpodown button{
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    cursor:pointer
+
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+.dropdown .hrana{
+    display:none;
+    background-color: red ;
+    position:absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 10px pink;
+}
+.dropdown:hover .hrana{
+    display:block
+}
+
+.dropdown a:hover{
+    background-color: #59ff5f;
+}
+
+/*NAVIGATION BAR*/
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #351a66;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+
+}
+
+.navbar a{
+    color: azure;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.navabr a:hover{
+    background-color: gray;
+}
+.navbar li{
+    float: left;
+}
+
+/*TELEFON-LAYOUT
+to odpodej mardiš, če maš vsporedno več elementov za pc in hočeš da se postavjo vertikalno če gledaš s telefona*/
+@media screen and (max-width:600px){
+    aside,section, article{  /*tle daš not svoje elemente te so sam primer*/
+        width:100%
+    }
+
+}
 
 
+/*GALERIJA*/
+.galerija{
+    float: left;
+    margin: 10px;
+    border: #0437F2 2px solid;
+    display: block;
 
+}
 
+/*flexbox brocode 3:29*/
 
+/*TRANSFORM- da spreminjaš stvari elemnta
+
+to lahko delaš tut z slikami*/
+
+#transform1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    margin: 10px;
+    clear: both;
+    font-size: 13em;
+    text-align: center;
+    background-color: #36a862;
+
+    transform: translate(200px, 200px); /*da ga premakneš za 200px po x in y osi, za  osi napiši translateX*/
+    transform: rotateZ(90deg);
+    transform: scale(1.2,1.2); /*to je v procentih*/
+    transform:skew(2)/*razpoteg*/
+
+}
+
+/*ANIMACIJA*/
+
+#animate1{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    margin: 10px;
+    clear: both;
+    font-size: 13em; 
+    text-align: center;
+    background-color: #e71809;
+    
+}
+
+#animate{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    margin: 10px;
+    clear: both;
+    font-size: 13em; 
+    text-align: center;
+    background-color: #e71809;
+    animation-name: slideLeft;      /*tle napišeš ime animacije k jo hočeš za lement, eno niži pa čas animacije*/
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: alternate-reverse;
+    animation-timing-function: linear;   /*ease-in-out, lahko tut iz side inspectiona kopiraš kodo za animacijo*/
+}
+
+#animate1:hover{
+    animation-name: glow;      
+    animation-duration: 2s;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(100%);}
+}
+
+@keyframes slideRight{
+    to{transform: translateX(100%);}
+}
+
+/*gor dol translateY*/
+
+@keyframes rotate{
+    50%{transform: rotateZ(360dag)} /*Procenti so kok se animacije odvije, po tem gre pa nazaj na prvotno stanje*/
+}
+
+@keyframes povečaj{
+    50%{transform: scale(2, 2)}
+    /*isto za shrink*/
+}
+
+@keyframes fade {
+    50%{opacity:0}
+    
+}
+
+@keyframes colorchange {
+    50%{background-color: #36a862;}
+}
+
+@keyframes glow {
+    50%{box-shadow: 0px 0px 50px;}
+}
 
 
 

@@ -23,8 +23,36 @@
   <link rel="stylesheet" href="stil.css"> <!--  rel je relationship med html in css fajlom-->
 </head>
 
+<!--LAYOUT:
+heather
+nav
+main
+section = odvisna vsebina
+aside = kontent ob strani
+aticle = neodvisna vsebina
+footer-->
+
 
   <body>
+    <header>
+        <!--dropdown meni-->
+        <div class="dropdown">
+            <button>HRANA</button>
+            <div class="hrana">
+                <a href="">Jabolko</a>
+                <a href="">Pomaranča</a>
+                <a href="">Banana</a>
+            </div>
+        </div>
+        <!--NAVIGATION BAR-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">O NAS</a></li>  
+                    <li><a href="">KONTAKT</a></li>  
+                     <li><a href="">PRODUKTI</a></li>    
+                </ul>
+    </header>
     
     <a href="index.html">NAZAJ NA GLAVNOSTRAN</a>
     
@@ -122,8 +150,57 @@
     <p>TO JE 4</p>
     <p>TO JE 5</p>
 
+
+    <!--PSEUDO-CLASES-FUUL POMEMBEN 
+uporabljaš, da se elemnt spremeni ko se nekaj dogaja z njim, howeraš z miško, klikneš....-->
+    <a href="https://www.thingiverse.com/thing:6948507">3D PRINT</a>
+
+    <ul>
+        <li>TO JE #1</li>
+        <li>TO JE #2</li>
+        <li>TO JE #3</li>
+        <li>TO JE #4</li>
+        <li>TO JE #5</li>
+        <li>TO JE #6</li>
+        <li>TO JE #7</li>
+        <li>TO JE #8</li>
+        <li>TO JE #9</li>
+    </ul>
+
+    <div id="pozdrav">
+        POJDI ČEZ
+        <p>hello</p>
+        
+    </div>
+
+    <br>
+
+    <h1 id="pseudo">PSEUDO ELEMNET</h1>
+
+    <p id="pseudop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repellendus nobis quisquam in nulla non! Provident aut illo inventore molestias fugiat, nulla sed velit non ullam, necessitatibus dicta placeat alias.</p>
+
+    <ul id="sadje">
+        <li id="jabolko">jabolko</li>
+        <li id="pomaranča">pomaranča</li>
+        <li id="banana">banana</li>
+       
+    </ul>
+
+    <footer>
+        <!--PAGINATION-št. strani-->
+        <div class="pagination">
+                <a href=""><</a>
+                <a calss="" href="index.html">1</a>
+                <a calss="active" href="CSS.html">2</a>
+                <a href="">></a>
+            </div>
+    </footer>
+
+
     
 </body>
+
+
 
 
 
